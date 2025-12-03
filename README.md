@@ -20,3 +20,4 @@ npx serve . -l 8080
 ```
 
 See `docs/USAGE.md` for more details, including the .NET option.
+See the [LICENSE](./LICENSE) file for details.
