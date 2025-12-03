@@ -1,0 +1,15 @@
+/* Styles dédiés à l'impression PDF */
+@page {
+  size: A4;
+  margin: 12mm;
+}
+
+/* Masquer les éléments interactifs non nécessaires en PDF */
+#timer-widget { display: none !important; }
+.reveal .controls, .reveal .progress { display: none !important; }
+
+/* Ajuster l'échelle si besoin */
+html.print-pdf .reveal .slides {
+  font-size: 26px;
+}
+

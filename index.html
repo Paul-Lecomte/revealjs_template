@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <title>Template Reveal.js</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Reveal.js core CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.css" />
+  <!-- Theme (changeable) -->
+  <link id="reveal-theme" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/theme/black.css" />
+  <!-- Code highlight theme (optional) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets@11/styles/github-dark-dimmed.min.css" />
+  <!-- Custom overrides -->
+  <link rel="stylesheet" href="css/custom.css" />
+  <link rel="stylesheet" href="css/theme-overrides.css" />
+  <!-- Print styles for PDF -->
+  <link rel="stylesheet" href="print/print.css" media="print" />
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <!-- Chargement du contenu Markdown -->
+      <section data-markdown="slides.md"
+               data-separator="^---$"
+               data-separator-vertical="^--$"
+               data-separator-notes="^Note:"></section>
+    </div>
+  </div>
+
+  <!-- Reveal.js core JS -->
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.js"></script>
+  <!-- Plugins -->
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/markdown/markdown.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/notes/notes.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/highlight/highlight.js"></script>
+
+  <!-- Custom JS -->
+  <script src="js/custom.js"></script>
+
+  <script>
+    // Initialisation Reveal.js
+    Reveal.initialize({
+      hash: true,
+      slideNumber: true,
+      controls: true,
+      progress: true,
+      center: true,
+      transition: 'slide',
+      // Pour améliorer l'accessibilité / navigation
+      pdfSeparateFragments: false,
+      fragmentInURL: true,
+      plugins: [ RevealMarkdown, RevealNotes, RevealHighlight ]
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+/* Petites surcouches au thème Reveal choisi */
+.reveal {
+  font-size: 30px; /* bonne lisibilité par défaut */
+}
+
+.reveal .slides pre code {
+  font-size: 0.9em;
+}
+
+/* Contraste amélioré pour citations */
+.reveal blockquote {
+  border-left: 4px solid var(--brand-primary);
+}
+
